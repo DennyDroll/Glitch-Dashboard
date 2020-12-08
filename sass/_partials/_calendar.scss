@@ -1,0 +1,158 @@
+#calendar
+{
+    display: inline; 
+    @media only screen and (min-width:1440px)
+    {
+        font-size: 16px;
+    }
+    
+    div
+    {
+        display: inline;
+    }
+    .clndr
+    {
+        display: inline-block;
+        width: 90%;
+        margin-top: 50px;
+        
+    }
+    .clndr-controls
+    {
+        // padding: 14px;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-top: 25px;
+        top: 0;
+
+        .clndr-previous-button,
+        .clndr-next-button,
+        .current-month
+        {
+            display: inline;
+            top: 0;
+            cursor: pointer;
+        }
+        .clndr-previous-button:hover,
+        .clndr-next-button:hover,
+        .current-month:hover
+        {
+            background-color: $bar-color;
+        }
+
+        .clndr-previous-button,
+        .clndr-next-button,
+        .current-month
+        {
+            margin: 10px;
+            padding: 1% 10% 1% 10%;     
+            background-color: $accent-color;
+            border-radius: 5px;
+        }
+    }
+    .clndr-grid
+    {
+        display: inline-block;
+        width: 70%;
+        margin-top: 50px;
+        margin-left: 10px
+    }
+    .days-of-the-week
+    {
+        padding-bottom: 5px;
+        border-style: solid;
+        border-width: 0 0 2px 0;
+        border-color: $bar-color;
+    }
+    .header-day
+    {
+        display: inline-block;
+        // width: 13%;
+        @media only screen and (min-width:800px)
+        {
+            padding:  0 38px 0 38px;
+            font-size: 18px;
+        }
+       
+        @media only screen and (min-width:1440px)
+        {
+            padding:  0 31px 0 31px;
+            font-size: 15px;
+        }
+        @media only screen and (min-width:1900px)
+        {
+            padding:  0 45px 0 45px;
+            font-size: 15px;
+        }
+    }
+    .days
+    {
+        
+        width: 90%;
+        text-align: center;
+    }
+    .day
+    {
+        display: inline-block;
+        width: 10%;
+        padding: 50px 15px 50px 2px;
+        @media only screen and (min-width:1440px)
+        {
+            font-size: 18px;
+            padding: 50px 15px 50px 20px;
+        }
+    }
+    .today
+    {
+        .day-number
+        {
+            border-style: solid;
+            border-width: 0 0 2px 0;
+            border-color: $bar-color;
+        }
+        
+    }
+    .adjacent-month
+    {
+        color: $highlight-color;
+    }
+       
+    .event-listing
+    {
+        position: relative;
+        float: right;
+        width: 25%;
+        background-color: $accent-color;
+        margin-top: 50px;
+        height: 65%;
+        margin-right: 1%;
+        border-radius: 5px;
+        overflow: auto;
+        .event-listing-title
+        {
+            @extend .days-of-the-week;
+            margin-left: 25%;
+            position: relative;
+            
+            
+        }
+    }
+
+    .event-item
+    {
+        display: table;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .event-item-name,
+    .event-item-location
+    {
+        @extend .event-item;
+    }
+    .event
+    {
+        color: $bar-color;
+    }
+}

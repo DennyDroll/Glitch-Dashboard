@@ -1,0 +1,107 @@
+/* Dropdown button*/
+.dropbtn
+{
+    background-color: $accent-color;
+    color: $text-color;
+    font-family: $font;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 20px;
+    vertical-align: middle;
+}
+// Dropdown button on hover & focus
+.dropbtn:hover, .dropbtn:focus
+{
+    background-color: $highlight-color;
+}
+// The container <div> - needed to position the dropdown content
+.dropdown
+{
+    position: relative;
+    /*Don't really need this just for demo styling*/
+    
+    float: left;
+    min-width: 160px;
+    // max-width: 15%; 
+    margin-left: 150px;
+}
+.dropdown:after {
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color: $text-color;
+    background-color: $bar-color;
+    width: 40px;
+    // margin-left: 150px;
+    right: -152px;
+    height: 34px;
+    padding: 15px 0px 0px 0px;
+    // border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 4px;
+    text-align: center;
+}
+// Dropdown Content (Hidden by Default)
+.dropdown-content
+{
+    @extend .dropbtn;
+    // display: none;
+    position: absolute;
+    background-color: $accent-color;
+    
+    z-index: 1;
+    text-decoration: none;    
+}
+// Links inside the dropdown
+.dropdown-content a
+{
+    color: $text-color;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+// Change color of dropdown links on hover
+.dropdown-content a:hover
+{
+    background-color: $highlight-color;
+}
+
+// Show the dropdown menu
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+.dropdwn-wrapper
+{ 
+    font-weight: 300;
+    font-size: 20px;
+    color: $text-color;
+}
+
+
+
+
+
+
+

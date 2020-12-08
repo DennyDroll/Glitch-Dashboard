@@ -1,0 +1,59 @@
+.content
+{
+    width: 90%;
+}
+
+.content
+{
+    display: inline-block;
+    padding-left: 50px;
+    p.FName
+    {
+        font-size: 60px;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 35px;
+    }
+    p.greeting
+    {
+        margin: 0;
+        margin-top: 20px;   
+    }   
+}
+.Calendar
+{
+    display: inline;
+}
+.tools
+{
+    @extend .Calendar;
+    margin-left: 31.5%;
+}
+.news
+{
+    @extend .Calendar;
+    margin-left: 29%;
+}
+#calendarStart
+{
+    display: inline; 
+    padding-left: 10px;
+    border: solid $bar-color;
+    border-width: 0 0 0 2px;
+    display: inline;
+    margin-right: 10px; 
+}
+#tools
+{
+    // @extend #calendar;
+    margin-left: 30%;
+    padding-left: 10px;
+    border: solid $bar-color;
+    border-width: 0 0 0 2px;
+    display: inline;
+    margin-right: 10px;
+}
+#news
+{
+    @extend #tools;
+}

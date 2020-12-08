@@ -1,0 +1,58 @@
+#navbar
+{
+    background-color: $accent-color;
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+    text-align: left;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 20px;
+}
+#Logo
+{
+    padding: 12.5px 10px;
+    max-height: 50px;
+    max-width: 120px;
+    vertical-align: middle;
+}
+#userBtn
+{
+    display: inline-block;
+    background-color: $accent-color;
+    color: $text-color;
+    font-family: $font;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0%;
+    
+    img
+    {
+        -webkit-filter: invert(100%) !important;
+        width: 20px;
+        height: 20px;
+        margin: auto;
+    }
+}
+#userBtn:hover, #userBtn:focus
+{
+    background-color: $highlight-color;
+}
+.timeDate
+{
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+}
+#date
+{
+    right: 8%
+}
+#time
+{
+    right: 5%;
+}

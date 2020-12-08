@@ -1,0 +1,77 @@
+button
+{
+    display: inline-block;
+    img
+    {
+        display: inline-block;
+    }
+
+}
+#sidebar
+{
+    background-color: $accent-color;
+    height: 95%;
+    width: 50px;
+    float: left;
+    a
+    {
+        @extend .sidebarBtn;
+        text-decoration: none;
+        color: $text-color;
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+.sidebarBtn
+{
+    background-color: $accent-color;
+    color: $text-color;
+    font-family: $font;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.sidebarBtn:hover, .sidebarBtn:focus
+{
+    background-color: $highlight-color;
+}
+#extendBtn
+{
+    @extend .sidebarBtn;
+    position: absolute;
+    top: 95%;
+    left: 0%;
+    background-color: $bar-color;
+    border-radius: 2px;
+
+}
+.calendarBtn
+{
+    @extend .sidebarBtn;
+    
+    
+    img
+    {
+        -webkit-filter: invert(100%) !important;
+        width: 25px;
+        height: 25px;   
+    }
+}
+.linkBtn
+{
+    @extend .calendarBtn;
+}
+.BtnText
+{
+    display: none;
+    margin-left: 10px;
+    margin-right: 0;
+    width: 100px;
+}
+.BtnText:hover
+{
+    background-color: $highlight-color;
+}

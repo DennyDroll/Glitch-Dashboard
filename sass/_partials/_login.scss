@@ -1,0 +1,28 @@
+.text
+{
+    text-align: center;
+    margin-top: 9%;
+}
+#LogoLogin
+{
+    max-height: 50px;
+    max-width: 120px;
+}
+#loginHidden
+{
+    display: none;
+}
+h3
+{
+    margin-top:-25px
+}
+input
+{
+    border-width: 0 0 2px 0;
+    border-color: $bar-color;
+    background-color: $background-color;
+    color: $text-color;
+    text-align: center;
+    height: 35px;
+    width: 250px;
+}
